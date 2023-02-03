@@ -1,0 +1,47 @@
+---OVERVIEW: frontend - reactjs
+-- Phần 1: frontend
+	- HTML5:
+		+ tag basic
+		+ table and form 
+		+ các thẻ bố cục nội dung
+	- CSS3:
+		+ dịnh dạng nội dung trên trang
+		+ các tương tác
+		+ animation
+		+ effect
+		+ ...
+	- Ngôn ngữ lập trình kịch bản: javascript
+		+ syntax
+		+ khái niệm cơ bản của ngôn ngữ lập trình 
+			-> biến, hằng, kiểu dữ liệu, 
+				toán tử, toán hạng, biểu thức, câu lệnh, 
+				khối lệnh ....
+			-> I/O 
+			-> Các cấu trúc điều khiển
+				(3 loại)
+			-> Mảng
+			-> Hàm
+			-> DOM / Event
+			-> Object
+			-> OOP in javascript
+	- Jquery
+	- Bootstrap: 
+	- Cắt ghép giao diện: 
+		.psd, .ai, .xd, figma => .html 
+	---->
+	Hoàn thiện project frontend: 
+		website: (5 trang html -> 10 html)
+		(khoảng 2 tuần)
+		--> Chứng nhận: 
+--------------------
+	- Tài nguyên học tập:
+		+ Slides
+		+ Labguide
+		+ Books
+	- Công cụ lập trình:
+		Vs Code 
+		Sublime text
+		netbeans
+		....
+		
+-- Phần 2: reactjs
