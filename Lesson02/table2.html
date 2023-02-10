@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo bảng với các thuộc tính gộp ô</title>
+</head>
+<body>
+    <h1>Tạo bảng với các thuộc tính gộp ô (hàng, cột)</h1>
+    <hr>
+    <table border="1" width="80%" align="center" cellspacing="0" cellpadding="5">
+        <thead bgcolor="cyan">
+            <tr>
+                <th rowspan="2">STT</th>
+                <th rowspan="2">Họ và tên</th>
+                <th colspan="2">Điểm thi</th>
+            </tr>
+            <tr>
+                <th>Điểm toán</th>
+                <th>Điểm văn</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>100</td>
+                <td>Chung trịnh</td>
+                <td align="right">2</td>
+                <td align="right">3</td>
+            </tr>
+            <tr bgcolor="green">
+                <td>101</td>
+                <td>Chung chung</td>
+                <td align="right">6</td>
+                <td align="right">5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Trung Bình</th>
+                <th bgcolor="#ccc">...</th>
+                <th bgcolor="#ccc">...</th>
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+</html>
