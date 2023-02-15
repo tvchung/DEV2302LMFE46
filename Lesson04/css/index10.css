@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #ccc;
+    margin: 1rem 10%;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+}
+
+nav a{
+    text-decoration: none;
+    background-color: green;
+    display: block;
+    padding: .5rem 1rem ;
+}

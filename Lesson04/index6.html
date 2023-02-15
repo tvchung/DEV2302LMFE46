@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cú pháp tương tác css trong html</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Cú pháp tương tác css trong html</h1>
+        <hr>
+    </section>
+    <!-- Cú pháp CSS tương tác thông qua tên thẻ  -->
+    <style>
+        h2{
+            color: blue;
+        }
+        p{
+            border-left: 1px solid blue;
+            border-top: 1px solid blue;
+            margin: 1rem;
+            padding: 1rem;
+        }
+    </style>
+    <section>
+        <h2>Cú pháp CSS tương tác thông qua tên thẻ</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis asperiores cupiditate consectetur dolorum voluptatibus? Fugit voluptates quas atque, error eveniet quaerat minus sint cumque, architecto incidunt placeat esse assumenda repellat.
+        </p>
+        <hr>
+    </section>
+    <!-- Cú pháp css tương tác thông qua thuộc tính id của phần tử -->
+    <style>
+        /* Cú pháp css tương tác thông qua thuộc tính id của phần tử */
+        #zone1{
+            background-color: pink;
+        }
+    </style>
+    <section id="zone1">
+        <h2>Cú pháp css tương tác thông qua thuộc tính id của phần tử</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt optio, aliquam dolore voluptate velit omnis hic debitis corporis quasi, nisi minus ex, iusto amet possimus quod a ea ullam praesentium.
+        </p>
+    </section>
+    <!-- Cú pháp css tương tác thông qua thuộc tính class của phần tử html -->
+    <style>
+        .title-2{
+            color: brown;
+            font-family: "Tahoma";
+            font-weight: 1200;
+            padding: 1.5rem;
+        }
+        .noi-dung{
+            background-color: aqua;
+        }
+    </style>
+    <section id="zone2">
+        <h2 class="title-2 ">
+            Cú pháp css <span class="noi-dung">tương tác thông qua thuộc tính class</span> của phần tử html
+        </h2>
+        <p class="noi-dung">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt optio, aliquam dolore voluptate velit omnis hic debitis corporis quasi, nisi minus ex, iusto amet possimus quod a ea ullam praesentium.
+        </p>
+    </section>
+    <!-- Cú pháp css tương tác thông qua giá trị thuộc tính của phần tử -->
+    <style>
+        input[type="text"]{
+            width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 0;
+            padding: .25rem .5rem;
+        }
+        input:focus{
+            outline: none;
+            border-color: red;
+        }
+    </style>
+    <section id="zone3">
+        <h3>Cú pháp css tương tác thông qua giá trị thuộc tính của phần tử</h3>
+        <hr>
+        <div class="row">
+            <label for="hoTen">Họ tên:</label>
+            <input type="text" name="hoTen" id="hoTen">
+        </div>
+        <div class="row">
+            <label for="taiKhoan">Tài khoản:</label>
+            <input type="text" name="taiKhoan" id="taiKhoan">
+        </div>
+        <div class="row">
+            <input type="submit" name="btSubmit" id="btSubmit">
+            <input type="reset" name="btReset" id="btReset">
+        </div>
+    </section>
+</body>
+</html>
