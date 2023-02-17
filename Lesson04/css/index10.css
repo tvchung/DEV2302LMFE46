@@ -6,10 +6,15 @@ nav{
     background-color: #ccc;
     margin: 1rem 10%;
 }
+ul li{
+    border-left: 1px solid red;
+    flex:0 100%;
+}
 nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    
     align-items: center;
     background-color: orange;
 }
