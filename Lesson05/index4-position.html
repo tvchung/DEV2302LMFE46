@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        section{
+            border: 1px solid red;
+            width: 250px;
+        }
+        section img{
+            width: 100%;
+        }
+        section >div {
+            position: relative;
+        }
+        div span {
+            position: absolute;
+            background-color: red;
+            padding: 1rem;
+            color: #fff;
+            right: 0;
+            opacity: .75;
+            border-bottom-left-radius: 75%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <img src="images/anh.jpg" alt="ảnh">
+            <span>50%</span>
+        </div>
+    </section>
+</body>
+</html>

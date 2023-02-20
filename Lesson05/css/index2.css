@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 16px;
+}
+/* 5' */
+nav{
+    margin: 1rem;
+    background-color: #78b43d;
+    width: 200px;
+}
+nav ul{
+    list-style: none;
+    border: 1px solid red;
+}
+nav ul li{
+    border-bottom: 1px solid #ccc;
+}
+nav ul li:last-child{
+    border-bottom: none;
+}
+nav a{
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover{
+    background-color: red;
+    color: yellow;
+}
+nav ul li:first-child a{
+    background-color: red;
+    text-transform: uppercase;
+}

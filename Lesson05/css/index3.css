@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html,body{
+    font-size: 16px;
+}
+nav{
+    margin: 1rem;
+    width: 200px;
+}
+nav > div {
+    background-color: #ff3f00;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+nav > div > div:nth-child(2){
+    text-transform: uppercase;
+    color: #fff;
+    padding: .5rem 0;
+}
+nav > div > div span {
+    display: block;
+    border: 2px solid #fff;
+    margin: .2rem .5rem;
+    width: 1rem;
+}
+
+nav ul{
+    background-color: #78b43d;
+    list-style: none;
+    display: none; /*ban đầu không hiển thị*/
+}
+nav  a{
+    display: block;
+    padding: .5rem ;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+}
+nav a:hover{
+    background-color: #ff3f00;
+}
+/* khi hover đến danh mục, hiển thị menu  */
+nav > div:hover +  ul {
+    display: block;
+}
