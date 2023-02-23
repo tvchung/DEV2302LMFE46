@@ -51,25 +51,25 @@ header nav a:hover{
 .active::after{
     content: "";
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 1rem;
-    height: 0;
-    width: 50%;
-    /* transform: translateY(-50%); */
+    height: 50%;
+    width: calc(70% - 1.5rem);
+    transform: translateY(-50%);
     border-bottom: 0.3rem solid #bd945f;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 }
 header nav a::after{
     content: "";
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 1rem;
-    height: 0;
+    height: 50%;
     width: 0;
-    /* transform: translateY(-50%); */
+    transform: translateY(-50%);
     border-bottom: 0.3rem solid #bd945f;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 }
 header nav a:hover::after{
-    width: 50%;
+    width: calc(70% - 1.5rem);
 }
