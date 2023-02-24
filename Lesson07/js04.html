@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng các hàm alert, confirm, prompt</title>
+</head>
+<body>
+    <section id="zone1">
+        <h1>Sử dụng các hàm alert, confirm, prompt</h1>
+        <hr>
+        <button onclick="fn_alert();">alert</button>
+        <button onclick="fn_confirm();">confirm</button>
+        <button onclick="fn_prompt();">prompt</button>
+    </section>
+
+    <script>
+        // hàm alert
+        const fn_alert = ()=>{
+            alert("Xin chào tất cả các bạn");
+        }
+        // hàm confirm
+        const fn_confirm = ()=>{
+            let res = confirm('Bạn có muốn làm bạn mình không?');
+            if(res){
+                alert('Bạn chọn có rồi nhé'+res);
+            }else{
+                alert("Thế thì bye nhé!"+res);
+            }
+        }
+        // hàm prompt -> hộp nhập giá trị dạng text
+        const fn_prompt = ()=>{
+            let result = prompt("Mời bạn nhập tên của mình:");
+            document.write("<h2> Xin chào," + result +" kkkk");
+        }
+    </script>
+</body>
+</html>

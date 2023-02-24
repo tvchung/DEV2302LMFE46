@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giải phương trình bậc 1</title>
+  </head>
+  <body>
+    <section id="zone1">
+      <h1>Giải phương trình bậc 1</h1>
+      <form action="" method="post" name="frmGPT">
+        <div>
+          <label for="heSoA">Hệ số a:</label>
+          <input type="number" name="heSoA" id="heSoA" />
+        </div>
+        <div>
+          <label for="heSoB">Hệ số b:</label>
+          <input type="number" name="heSoB" id="heSoB" />
+        </div>
+        <div>
+          <label for=""></label>
+          <input type="button" name="btnGPT" value="   GPT   " onclick="fn_ptb1()" />
+        </div>
+        <div>
+          <label for="ketQua">Kết quả:</label>
+          <input type="text" name="ketQua" id="ketQua" readonly />
+        </div>
+      </form>
+    </section>
+
+    <script>
+      // lấy giá trị trên form
+      //heSoA = frmGPT.heSoA.value;
+      // gán:
+      // frmGPT.ketQua.value = kq;
+
+      const fn_ptb1 = () => {
+        let a=frmGPT.heSoA.value;
+        let b=frmGPT.heSoB.value;
+        a=parseFloat(a);
+        b=parseFloat(b);
+        console.log("Giải phương trình:", a, ".x+", b, "=0");
+        let kq="";
+        if (a == 0) {
+            if (b == 0) {
+                kq="Pt vô số nghiệm";
+            } else {
+                kq="Pt vô nghiệm";
+            }
+        } else {
+            kq="Pt có nghiệm x= " + (-b/a);
+        }
+        // Hiển thị kết quả
+        frmGPT.ketQua.value = kq
+      };
+    </script>
+  </body>
+</html>
